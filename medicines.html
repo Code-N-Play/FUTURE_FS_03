@@ -106,6 +106,176 @@
         .profile i {
             font-size: 30px;
         }
+
+        .top_branding {
+            height: 520px;
+            width: 100%;
+            background-color: rgb(155, 248, 255);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top_branding {
+            display: flex;
+
+        }
+
+        .headpic {
+            height: 520px;
+            width: 700px;
+            margin-left: 45%;
+            mask-image: linear-gradient(to left, black 10%, transparent);
+            -webkit-mask-image: linear-gradient(to left, black 10%, transparent);
+        }
+
+        .texting {
+            position: absolute;
+        }
+
+        .mainbtn {
+            margin-top: 30px;
+            margin-left: 55px;
+            display: flex;
+            align-items: center;
+            gap: 55px;
+        }
+
+        .row1 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card {
+            height: 310px;
+            width: 250px;
+            background-color: rgb(220, 245, 244);
+            border: none;
+            box-shadow: 0 10px 30px rgb(184, 184, 184);
+        }
+
+        .card1image {
+            height: 140px;
+            /* width: 185px;
+            margin-top: 10px;
+            margin-left: 10px; */
+            width: 100%;
+        }
+
+        h5 {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .buybtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+            border-width: 2px solid;
+
+        }
+
+        .pageend {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .rightside {
+            margin-top: -75px;
+        }
+
+        .condetail {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .conicon {
+            height: 35px;
+            width: 35px;
+            background-color: aquamarine;
+            border-radius: 50%;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .github {
+            height: 35px;
+            width: 35px;
+            background-color: aquamarine;
+            border-radius: 50%;
+        }
+
+        .linkedin {
+            height: 35px;
+            width: 35px;
+            background-color: aquamarine;
+            border-radius: 50%;
+        }
+
+        .youtube {
+            height: 35px;
+            width: 35px;
+            background-color: aquamarine;
+            border-radius: 50%;
+        }
+
+        .web {
+            height: 35px;
+            width: 35px;
+            background-color: aquamarine;
+            border-radius: 50%;
+        }
+
+        .conicon i {
+            padding: 9px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .github i {
+            padding: 7.5px;
+            font-size: 20px;
+        }
+
+        .linkedin i {
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        .youtube i {
+            padding: 6px;
+            font-size: 20px;
+        }
+
+        .web {
+            padding: 1px;
+            padding-left: 6px;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .bottomtext {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -130,7 +300,261 @@
             </div>
         </div>
     </div>
-    
+    <br>
+
+    <div class="top_branding">
+        <div class="texting">
+            <br><br>
+            <h1 style="font-weight: 700; margin-left: 55px; margin-top: 25px; font-size: 50px;">Smart care for,</h1>
+            <h1 style="font-weight: 700; margin-left: 55px; ; font-size: 50px;">Everyday Health.</h1>
+            <p style="margin-top: 60px; margin-left: 55px; font-size: 20px;">Medicines,wellness & Daily Healthcare</p>
+            <p style="margin-top: -15px; margin-left: 55px; font-size: 20px;">Delivered Safely to your Doorstep</p>
+            <p style="margin-top: 25px; margin-left: 55px; font-size: 20px;">Trusted by Family & Approved Brands</p>
+            <br><br>
+            <form action="">
+                <button type="submit" class="btn" style="margin-left: 55px;">Shop Healthcare</button>
+            </form>
+        </div>
+        <img class="headpic" src="images/medicin.jpg" alt="">
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row1">
+            <div class="card">
+                <img class="card1image" src="images/medicine/paracetomal.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">Paracitamol  </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 29/-<a
+                        style="text-decoration: line-through; color: red; margin-left: 20px;">Rs.49/-</a></p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/cipladen.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">Cipladine (10g) </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 99/-</p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/burnol.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;"> Burnol </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 35/-</p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/cough serup.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">Cough Syrup </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 119/-<a
+                        style="text-decoration: line-through; color: red; margin-left: 20px;">Rs.125/-</a></p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/viceks.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">Vicks VapoRub </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 45/-</p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row1">
+            <div class="card">
+                <img class="card1image" src="images/medicine/inhelar.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">Inhaler</h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 25/-<a
+                        style="text-decoration: line-through; color: red; margin-left: 20px;">Rs.40/-</a></p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/electrolite.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">Electrolyte </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 59/-<a
+                        style="text-decoration: line-through; color: red; margin-left: 20px;">Rs.69/-</a></p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/lrg5.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">LRG 5 </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 40/-<a
+                        style="text-decoration: line-through; color: red; margin-left: 20px;">Rs.59/-</a></p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/cetrizen.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">Cetirizine </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 29/-</p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card1image" src="images/medicine/clac.jpg" alt="Arduino">
+                <h5 style="font-weight: 700;">ShelCal 500 mg </h5>
+
+                <p style="font-weight: 700; margin-left: 20px; margin-top: 10px;">Rs. 125/-<a
+                        style="text-decoration: line-through; color: red; margin-left: 20px;">Rs.149/-</a></p>
+
+                <div class="buybtn">
+                    <form action="">
+                        <button type="submit" class="btn">+ <i class="bx bx-cart-alt"></i></button>
+                    </form>
+                    <form action="">
+                        <button type="submit" class="btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        
+        <br>
+        <br><br><br><br>
+        <div class="pageend">
+            <div class="leftside">
+                <h1 style="font-weight: 700;">Code-<a style="color:rgb(91, 255, 91) ;">N</a>-Play</h1><br>
+                <p>
+                    840C/2/4, Block B, Jaypee Greens </p>
+                <p style="margin-top: -15px;">Greater Noida, Uttar Pradesh 201315, INDIA</p>
+                <div class="condetail">
+                    <div class="conicon">
+                        <i class="bx bx-phone"></i>
+                    </div>
+                    <p style="margin-top: 17px;"><a style="font-weight: 700; ">Phone:</a> +91 79913 08024</p>
+                </div>
+                <div class="condetail">
+                    <div class="conicon">
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <p style="margin-top: 17px;"><a style="font-weight: 700; ">EMail:</a> neerajkumarmaurya248@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="middleside">
+                <h6 style="font-weight: 600;">Useful Pages</h6>
+                <p><a style="color:rgb(91, 255, 91); font-weight: 700;">></a> <a href="Index.html"
+                        style="text-decoration: none ; color: black;">Home</a></p>
+                <p><a style="color:rgb(91, 255, 91); font-weight: 700;">></a> <a href="electronics.html"
+                        style="text-decoration: none ; color: black;">Electronics</a></p>
+                <p><a style="color:rgb(91, 255, 91); font-weight: 700;">></a> <a href="stationery.html"
+                        style="text-decoration: none ; color: black;">Stationery</a></p>
+                <p><a style="color:rgb(91, 255, 91); font-weight: 700;">></a> <a href="medicines.html"
+                        style="text-decoration: none ; color: black;">Medicines</a></p>
+                <p><a style="color:rgb(91, 255, 91); font-weight: 700;">></a> <a href="snacks.html"
+                        style="text-decoration: none ; color: black;">Snacks</a></p>
+
+            </div>
+            <div class="rightside">
+                <h6 style="font-weight: 600;">Follow us</h6>
+                <br>
+                <p>Stay connected — follow us for design updates,</p>
+                <p style="margin-top: -15px;">projects, and inspiration.</p>
+
+                <div class="social">
+                    <div class="github">
+                        <a href="https://github.com/Code-N-Play" style="text-decoration: none; color: black;"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/neeraj-kumar-6406b7332"
+                            style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="youtube">
+                        <a href="https://www.youtube.com/@CodePlay-y8h5x"
+                            style="text-decoration: none; color: black;"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="web">
+                        <a href="https://code-n-play.github.io/FUTURE_FS_01/index.html"
+                            style="text-decoration: none; color: black;"><i class="hgi hgi-stroke hgi-globe-02"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="bottomtext">
+            <p>© Copyright <a style="font-weight: 700;">Code-<a
+                        style="color: rgb(91, 255, 91); font-weight: 700;">N</a><a style="font-weight: 700;">-Play</a>
+                    All Rights Reserved</p>
+            <p style="margin-top: -15px;">Designed by <a style="font-weight: 700;">Neeraj</a> Distributed by<a
+                    style="font-weight: 700;"> Code-N-Play</a></p>
+        </div>
+    </div>
+
 </body>
 
 </html>
