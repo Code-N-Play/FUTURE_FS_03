@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>
+            Cart
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- hugeicons -->
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+    <!-- boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+         body {
+            font-family: "poppins";
+        }
+
+        .name {
+
+            font-weight: 700;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 70px;
+            background-color: rgb(240, 255, 244);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .brand {
+            margin-top: -10px;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .cartpage{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left{
+            height: 500px;
+            width: 60%;
+            background-color: azure;
+        }
+        .product{
+            display: flex;
+            align-items: center;
+        }
+        .proimage{
+            height: 150px;
+            width: 150px;
+            margin-top: 28px;
+            margin-left: 15px;
+            border-radius: 5px;
+        }
+        .prodetail{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .rightde{
+            height: 500px;
+            width: 39%;
+            background-color: beige;
+        }
+        .price{
+            display: flex;
+            
+        }
+
+    </style>
+    </head>
+    <body>
+        
+        <div class="navbar ">
+            <div class="brand">
+                <h1 class="name">Code-<a style="color:rgb(91, 255, 91);">N</a>-Play</h1>
+            </div>
+           <div class="right">
+                <A href="Index.html" style="text-decoration: none; color: black;"><p>Home</p></A>
+                <A href="electronics.html" style="text-decoration: none; color: black;"><p>Electronics</p></A>
+                <A href="stationery.html" style="text-decoration: none; color: black;"><p>Stationery</p></A>
+                <A href="medicines.html" style="text-decoration: none; color: black;"><p>Medicines</p></A>
+                <A href="snacks.html" style="text-decoration: none; color: black;"><p>Snacks</p></A>
+                
+           </div>
+        </div>
+
+        <br>
+        <div class="container">
+            <div class="cartpage" >
+                <div class="left">
+                    <h2>Items</h2>
+    
+                    <div class="product">
+                        <img src="images/medicin.jpg" class="proimage" alt="">
+                        <div class="prodetail">
+                            <h1>name</h1>
+                            <h5>price</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightde">
+                    <h2>Total</h2>
+                    <br><br>
+                    <div class="price">
+                        <p>Sub-Total</p>
+                        <p>756/-</p>
+                    </div>
+                
+                    <div class="price">
+                        <p>Delivery Charge</p>
+                        <p>50/-</p>
+                    </div>
+                    <br>
+                    <div class="grandtotal">
+                        <p>806/-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
