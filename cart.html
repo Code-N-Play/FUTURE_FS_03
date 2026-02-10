@@ -53,24 +53,26 @@
             justify-content: space-between;
         }
         .left{
-            height: 500px;
+            height: 540px;
             width: 60%;
             background-color: azure;
         }
         .product{
+            width: 90%;
             display: flex;
             align-items: center;
+            border: 1px solid;
+            border-radius: 8px;
         }
         .proimage{
-            height: 150px;
+            height: 120px;
             width: 150px;
-            margin-top: 28px;
-            margin-left: 15px;
+            margin-left: 1px;
             border-radius: 5px;
         }
         .prodetail{
             margin-left: 30px;
-            margin-top: 20px;
+            
         }
         .rightde{
             height: 500px;
@@ -79,8 +81,66 @@
         }
         .price{
             display: flex;
-            
+            margin-left: 20px;
         }
+        .grandtotal{
+            display: flex;
+            margin-left: 20px;
+        }
+        
+        .btn {
+            background-color: rgb(37, 36, 36);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            margin-left: 70px;
+            margin-top: 60px;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+        .btnpay{
+            margin-top: 30px;
+            margin-left: 5%;
+            width: 90%;
+            height: 32px;
+            background-color: rgb(15, 202, 8);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 700;
+        }
+        .btnpay:hover{
+            background-color: white;
+            color:rgb(15, 202, 8) ;
+            border: 1px solid green;
+        }
+        .paymentmed{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 90%;
+            margin-left: 5%;
+            background-color: white;
+            gap: 18px;
+        }
+        .paycard{
+            height: 20px;
+            width: 70px;
+        }
+        .discountcard{
+            height: 100px;
+            width: 60%;
+            background-color: rgb(24, 24, 24);
+            color: white;
+            display: flex;
+        }
+
+        
+
 
     </style>
     </head>
@@ -104,34 +164,89 @@
         <div class="container">
             <div class="cartpage" >
                 <div class="left">
-                    <h2>Items</h2>
-    
-                    <div class="product">
-                        <img src="images/medicin.jpg" class="proimage" alt="">
+                    <h2 style="text-align: center; margin-top: 25px; font-weight: 700; ">CART</h2>
+                    <br>
+                    <div class="product" style="margin-left: 5%;">
+                        <img src="images/electronics/arduinowithIC.png" class="proimage" alt="">
                         <div class="prodetail">
-                            <h1>name</h1>
-                            <h5>price</h5>
+                            <h4 style="font-weight: 700;">Arduino UNO R3</h4>
+                            <p style="margin-top: -8px; font-size: 14px;">Trusted by Engineering Students</p>
+                            <p style="font-weight: 600;">499/-</p>
                         </div>
+                        <form action="">
+                            <button type="submit" class="btn" style="margin-left: 97px;">Remove</button>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="product" style="margin-left: 5%;">
+                        <img src="images/23.png" class="proimage" alt="">
+                        <div class="prodetail">
+                            <h4 style="font-weight: 700;">Kurkure</h4>
+                            <p style="margin-top: -8px; font-size: 14px;">Only Engineering student can relate</p>
+                            <p style="font-weight: 600;">15/-</p>
+                        </div>
+                        <form action="">
+                            <button type="submit" class="btn">Remove</button>
+                        </form>
+                        
+                    </div>
+                    <br>
+                    <div class="product" style="margin-left: 5%;">
+                        <img src="images/electronics/esp32.jpg" class="proimage" alt="">
+                        <div class="prodetail">
+                            <h4 style="font-weight: 700;">ESP 32</h4>
+                            <p style="margin-top: -8px; font-size: 14px;">Everyday tech need</p>
+                            <p style="font-weight: 600;">349/-</p>
+                        </div>
+                        <form action="">
+                            <button type="submit" class="btn" style="margin-left: 182px;">Remove</button>
+                        </form>
                     </div>
                 </div>
                 <div class="rightde">
-                    <h2>Total</h2>
+                    <h2 style="text-align: center; margin-top: 25px; font-weight: 700; ">TOTAL</h2>
                     <br><br>
                     <div class="price">
-                        <p>Sub-Total</p>
-                        <p>756/-</p>
+                        <p style="font-weight: 700;">Sub-Total</p>
+                        <p style="margin-left: 60%;">863/-</p>
                     </div>
                 
                     <div class="price">
-                        <p>Delivery Charge</p>
-                        <p>50/-</p>
+                        <p style="font-weight: 700;">Delivery Charge</p>
+                        <p style="margin-left: 50%;">50/-</p>
                     </div>
                     <br>
                     <div class="grandtotal">
-                        <p>806/-</p>
+                        <p style="font-weight: 700;">Grand Total</p>
+                        <p style="margin-left: 55%;">913.00/-</p>
                     </div>
+
+                    <div class="pay">
+                        <form action="">
+                            <button type="submit" class="btnpay" > PAY </button>
+                        </form>
+                    </div>
+                    
+                    <h5 style="margin-left: 25px; margin-top: 40px; font-weight: 700; ">WE ACCEPT :</h5>
+                    <div class="paymentmed">
+                        <img class="paycard" src="images/images.png" alt="">
+                        <img class="paycard" src="images/rupay.png" alt="">
+                        <img class="paycard" src="images/mastercard.png" alt="">
+                        <img class="paycard" src="images/g pay.png" alt="">
+                        <img class="paycard" src="images/paytm.png" alt="">
+                    </div>
+                    <p style="text-align: center; margin-top: 10px;" ><a style="font-weight: 700;">Note: </a>This is a Demo e-commerce project built for learning purposses.</p>
                 </div>
             </div>
+            <br>
+            <div class="discountcard">
+                <i class="bx bx-crown"   style=" font-size: 70px; margin-top: 15px; margin-left: 20px; margin-right: 25px; color: white;"></i>
+                <div class="pretext">
+                    <p style="font-weight: 700; margin-top: 25px;">Same Day Delivery </p>
+                    <p style="margin-top: -15px;">Get same-day delivery for a whole year for only at 99/-</p>
+                </div>
+            </div>
+            <br>
         </div>
     </body>
 </html>
